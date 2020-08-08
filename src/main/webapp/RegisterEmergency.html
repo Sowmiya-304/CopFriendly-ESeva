@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<title>Register Emergency</title>
+<style type="text/css">
+  .container{
+ 
+  background: rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 20px;
+   width: 30%;
+  }
+</style>
+
+
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark navbar navbar-dark bg-primary">
+  <a class="navbar-brand">CopFriendly - ESeva</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto nav-pills">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="file:///C:/Users/sowmiya/Desktop/Sublime/RegisterViolation.html">Register Violation</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link active" href="file:///C:/Users/sowmiya/Desktop/Sublime/RegisterEmergency.html">Register Emergency</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Send SOS</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="file:///C:/Users/sowmiya/Desktop/Sublime/About.html">About </a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-1">
+       <button type="button" class="btn btn-success form-control mr-sm-3" >Logout</button>
+       
+    </form>
+  </div>
+</nav>
+
+
+	<div class="container"> 
+	<form action="RegisterEmergencyController" method="post">
+    <div class="form-group">
+      <label >Location*</label>
+    <input type="text" class="form-control" name="location" required=""> 
+    
+    <div class="form-group">
+      <label>Type of Emergency*</label><br>
+           <label>Accident</label>  <input type="radio" name="type_of_emergency" value="1" required="">&nbsp;&nbsp;
+            <label>Medical Care</label>  <input type="radio" name="type_of_emergency" value="0" required="">
+      
+    </div>
+      <div class="form-group ">
+
+      <label >Priority*</label><br>
+        <label>Critical</label>  <input type="radio" name="priority" value="1" required="">&nbsp;&nbsp;
+            <label>High</label>  <input type="radio" name="priority" value="2" required="">&nbsp;&nbsp;
+             <label>Medium</label>  <input type="radio" name="priority" value="3" required="">&nbsp;&nbsp;
+            <label>Low</label>  <input type="radio" name="priority" value="4" required="">
+    </div>
+  
+    <div class="form-group ">
+      <label >Number of People*</label>
+    <input type="number" class="form-control" name="no_of_people" required="">
+    </div>
+    
+ 
+  
+ <center>
+  <input type="submit" class="btn btn-success" value="Submit" name="submit">
+<button type="button" class="btn btn-warning" onclick="window.location.href='/Users/sowmiya/Desktop/Sublime/RegisterEmergency.html';">Reset</button>
+</center>
+  
+</form>
+</div>
+
+
+</body>
+</html>
